@@ -53,10 +53,9 @@ Route::group([
    Route::get('/quotient');
 });
 //3. Create 3 pages using Route, Controller, and Views.
+ Route::get('/','homepanel@index');
 Route::group([
-
     'prefix' => 'product'
-
 ], function(){
   //My homepage is the HELLO WORLD THE POST TEST IN LABORATORY MODULE 1: ACTIVITY ("HELLO WORLD")
    Route::get('/list','ProductList@index');
