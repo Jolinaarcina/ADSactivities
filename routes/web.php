@@ -40,3 +40,15 @@ Route::get('/numbers', function () {
 		$collectionB = $collectionA->collect();
    		return $collectionB->all(); 
 });
+//ROUTE  GROUP PREFIX (I did not put action because the instructions says that just create route without controller and blade. Did not show some display. I just type to the terminal to see the route list I have created.)
+//2.
+Route::group([
+
+    'prefix' => 'math'
+
+], function(){
+   Route::get('/addition');
+   Route::get('/multiply');
+   Route::get('/product');
+   Route::get('/quotient');
+});
