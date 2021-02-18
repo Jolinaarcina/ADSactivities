@@ -1,1 +1,1 @@
-# ADSactivities
+# Submitted by Jolina Arcina
